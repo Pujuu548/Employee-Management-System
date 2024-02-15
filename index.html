@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Employee Management System</h1>
+      <div class="controls">
+        <label for="department">Filter by Department:</label>
+        <select id="department">
+          <option value="">All</option>
+          <option value="HR">HR</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Finance">Finance</option>
+        </select>
+        <button onclick="filterByDepartment()">Filter</button>
+        <button onclick="calculateAverageSalary()">
+          Calculate Average Salary
+        </button>
+        <button onclick="increaseSalary()">Increase Salary</button>
+        <button onclick="sortEmployeesByAge()">Sort by Age</button>
+      </div>
+      <table id="employees"></table>
+    </div>
+    <script src="style.js"></script>
+  </body>
+</html>
